@@ -18,6 +18,7 @@
 <div class="products">
 </div>
 </form>
+<div class="footer">Scandiweb Test assignment</div>
 
 <script>
 let n=0;
