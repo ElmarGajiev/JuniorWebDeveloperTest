@@ -1,0 +1,66 @@
+body {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.header .pr_list {
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header button, input[type="submit"] {
+    float: right;
+    padding: 5px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+    .header button:hover, input[type="submit"]:hover {
+        outline: 2px blue solid;
+        outline-offset: 2px;
+        cursor: pointer;
+    }
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.hr_line {
+    border-top: 2px solid black;
+}
+
+.products {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product {
+    box-sizing: border-box;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+    .product .delete-checkbox {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 10px;
+        left: 10px;
+    }
