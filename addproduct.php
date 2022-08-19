@@ -66,6 +66,8 @@
         </div>
     </div>
 </form>
+<div class="footer">Scandiweb Test assignment</div>
+
 <script>
 
 $(document).ready(function(){
