@@ -77,29 +77,20 @@
 			}
 		}
 
-		$sql="Select sku from product_list where sku='".$sku."'";
-		$result=$connect->query($sql);
-		$row=$result->fetch_assoc();
-
-		if ($row==Null){
-			$obj_products = new Products($sku,$type);
-			$obj_dvd = new DVD($sku,$type,$name,$price,$size);
-			$obj_book = new Book($sku,$type,$name,$price,$weight);
-			$obj_furniture = new Furniture($sku,$type,$name,$price,$height,$width,$length);
-			$sql1=$obj_products->set();
-			$sql2=$obj_dvd->set();
-			$sql3=$obj_book->set();
-			$sql4=$obj_furniture->set();
+		$obj_products = new Products($sku,$type);
+		$obj_dvd = new DVD($sku,$type,$name,$price,$size);
+		$obj_book = new Book($sku,$type,$name,$price,$weight);
+		$obj_furniture = new Furniture($sku,$type,$name,$price,$height,$width,$length);
+		$sql1=$obj_products->set();
+		$sql2=$obj_dvd->set();
+		$sql3=$obj_book->set();
+		$sql4=$obj_furniture->set();
 		
-			$connect->query($sql1);
-			$connect->query($sql2);
-			$connect->query($sql3);
-			$connect->query($sql4);
+		$connect->query($sql1);
+		$connect->query($sql2);
+		$connect->query($sql3);
+		$connect->query($sql4);
 		
-			header("Location: /public/index.php");
-		}
-		else {
-			header("Location: /public/addproduct.php");
-		}
+		header("Location: /public/index.php");
 	}
 ?>
