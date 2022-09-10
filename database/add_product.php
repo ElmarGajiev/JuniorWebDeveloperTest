@@ -32,7 +32,7 @@
 				$this->type = $type;
 			}
 			function set() {
-				return "Insert Into product_list (sku,type)	Values ('$this->sku','$this->type')";
+				return "Insert Into product_list (sku,type) Values ('$this->sku','$this->type')";
 			}
 		}
 
@@ -45,7 +45,7 @@
 				$this->size = $size;
 			}
 			function set() {
-				return "Insert Into dvd (sku,type,name,price,size)	Values ('$this->sku','$this->type','$this->name','$this->price','$this->size')";
+				return "Insert Into dvd (sku,type,name,price,size) Values ('$this->sku','$this->type','$this->name','$this->price','$this->size')";
 			}
 		}
 
@@ -58,7 +58,7 @@
 				$this->weight = $weight;
 			}
 			function set() {
-				return "Insert Into book (sku,type,name,price,weight)	Values ('$this->sku','$this->type','$this->name','$this->price','$this->weight')";
+				return "Insert Into book (sku,type,name,price,weight) Values ('$this->sku','$this->type','$this->name','$this->price','$this->weight')";
 			}
 		}
 
@@ -73,7 +73,8 @@
 				$this->length = $length;
 			}
 			function set() {
-				return "Insert Into furniture (sku,type,name,price,height,width,length)	Values ('$this->sku','$this->type','$this->name','$this->price','$this->height','$this->width','$this->length')";
+				return "Insert Into furniture (sku,type,name,price,height,width,length)
+					Values ('$this->sku','$this->type','$this->name','$this->price','$this->height','$this->width','$this->length')";
 			}
 		}
 
