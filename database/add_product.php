@@ -1,6 +1,6 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"] ."/database/connect.php");
-    require_once($_SERVER["DOCUMENT_ROOT"] ."/database/classes.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] ."/JuniorWebDeveloper/database/connect.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] ."/JuniorWebDeveloper/database/classes.php");
 
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -27,5 +27,5 @@
         $obj_con = new connect\Connect($connect);
         $obj_con->connect($sql1, $sql2, $sql3, $sql4);
 		
-        header("Location: /index");
+        header("Location: /JuniorWebDeveloper/index");
     }

@@ -1,6 +1,6 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"] ."/database/connect.php");
-    require_once($_SERVER["DOCUMENT_ROOT"] ."/database/classes.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] ."/JuniorWebDeveloper/database/connect.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] ."/JuniorWebDeveloper/database/classes.php");
 
     if ($_SERVER["REQUEST_METHOD"] == "GET"){
 
