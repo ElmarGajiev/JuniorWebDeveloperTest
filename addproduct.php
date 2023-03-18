@@ -3,12 +3,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/src/addproduct.js"></script>
-    <link rel="stylesheet" href="/src/addproduct.css">
+    <script src="/JuniorWebDeveloper/src/addproduct.js"></script>
+    <link rel="stylesheet" href="/JuniorWebDeveloper/src/addproduct.css">
     <title>Product Add</title>
 </head>
 <body>
-<form id="product_form" action="https://donsie-libraries.000webhostapp.com/database/add_product" method="POST">
+<form id="product_form" action="/JuniorWebDeveloper/database/db_handler" method="POST">
 <div class="header">
     <div class="pr_list">Product Add</div>
     <input type="button" value="Cancel">
