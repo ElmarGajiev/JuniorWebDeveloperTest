@@ -1,5 +1,5 @@
 <?php
-namespace connect;
+Namespace connect;
 class Connect {
     public $connect;
     public function __construct($connect){
